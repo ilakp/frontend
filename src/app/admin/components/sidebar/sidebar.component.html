@@ -1,0 +1,73 @@
+<div class="admin-navbar">
+    <div class="user">
+        <img class="img-fluid img-thumbnail rounded" src="assets/img/profile.png" alt="profile image" />
+        <h4 class="name">Admin</h4>
+        <p class="mail">mohit&#64;gmail.com</p>
+    </div>
+    <div class="menu">
+        <div class="menu-head">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="menu-item">
+
+            <button mat-raised-button class="home-button" routerLink="/admin">Home
+                <mat-icon>dashboard</mat-icon>
+            </button>
+            <mat-accordion class="example-headers-align" multi>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Products Management
+                            <mat-icon>shopping_basket</mat-icon>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <button mat-raised-button class="home-button" routerLink="/admin/admin-products">Products
+                        <mat-icon>shop_two</mat-icon>
+                    </button>
+                    <button mat-raised-button class="home-button" routerLink="/admin/admin-add-products">Add Proucts
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Customer Management
+                            <mat-icon>group</mat-icon>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <button mat-raised-button class="home-button" routerLink="/admin/admin-customers">Customers
+                        <mat-icon>person</mat-icon>
+                    </button>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Category Management
+                            <mat-icon>shopping_basket</mat-icon>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <button mat-raised-button class="home-button" routerLink="/admin/admin-categories">Categories
+                        <mat-icon>list</mat-icon>
+                    </button>
+                    <button mat-raised-button class="home-button" routerLink="/admin/admin-add-category">Add Category
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Order Management
+                            <mat-icon>receipt</mat-icon>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <button mat-raised-button class="home-button" routerLink="/admin/admin-orders">Orders
+                        <mat-icon>list_alt</mat-icon>
+                    </button>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </div>
+</div>

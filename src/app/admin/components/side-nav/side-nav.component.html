@@ -1,0 +1,15 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav position="start" class="mat-desktop" #sidebar mode="side" opened>
+        <app-sidebar [sidenav]="sidenav"></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content class="mat-desktop-content">
+        <div class="content">
+            <div class="toolbar">
+                <admin-app-header (sidenav)="sidenav.toggle()"></admin-app-header>
+            </div>
+            <div class="container">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
